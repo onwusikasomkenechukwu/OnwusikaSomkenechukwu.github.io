@@ -138,6 +138,13 @@
 								<span class="image main"><img src="images/pic07.jpg" alt="" /></span>
 								<p>Below are some of my technical projects:</p>
 
+								<h3 class="major">PPG Signal Quality Classifier</h3>
+								<h3 class="major">1D CNN (ppg-sqi-cnn)</h3>
+								<span class="image main"><img src="images/ppg.png" alt="PPG SQI CNN" /></span>
+								<p>A 1D CNN that flags motion-corrupted photoplethysmography windows before they reach downstream tasks like heart rate estimation or arrhythmia detection — serving as the quality gate for a larger embedded health monitoring system targeting the Raspberry Pi Pico W + MAX30102.</p>
+								<p>Trained on PPG-DaLiA (15 subjects, wrist BVP across activities from sitting to cycling), pseudo-labeled with Elgendi's skewness SQI, and evaluated with subject-wise splits to measure generalization to unseen people. Test macro F1: <strong>0.96</strong>. Error asymmetry is intentional — the model errs toward flagging rather than passing a corrupted window, the correct behavior upstream of an HR or AFib pipeline. Ships with a Gradio demo for end-to-end inspection of real test windows. Stack: PyTorch, SciPy, Gradio, scikit-learn.</p>
+								<p>To view the source code, click <a href="https://github.com/onwusikasomkenechukwu/ppg-sqi-cnn" target="_blank">here</a>.</p>
+
 								<h3 class="major">A.N.T.S. — Defect Detection</h3>
 								<h3 class="major">on Raspberry Pi (NASA)</h3>
 								<span class="image main"><img src="images/ants.jpeg" alt="A.N.T.S. Project" /></span>
