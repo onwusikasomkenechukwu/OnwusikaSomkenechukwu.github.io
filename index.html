@@ -3,7 +3,7 @@
 	<head>
 		<title>Somkenechukwu Onwusika | Embedded ML and Biomedical Signals</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="Portfolio of Somkenechukwu Onwusika, an electrical engineering student at Howard University working on embedded machine learning, biomedical signal processing, LLM and agent systems, and deployment-oriented evaluation." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -69,8 +69,8 @@
 							<span>nationally selected Alcon Innovate Boldly R&amp;D externs</span>
 						</section>
 						<section>
-							<strong>0.96</strong>
-							<span>macro F1 on the PPG signal quality classifier predecessor</span>
+							<strong>3.70</strong>
+							<span>bpm MAE from the utility gate versus roughly 14 bpm under skewness gating</span>
 						</section>
 					</div>
 
@@ -89,12 +89,12 @@
 						<section class="project-card featured">
 							<p class="kicker">Primary Research</p>
 							<h3>ppg-pipeline: Utility-Aligned Quality Gating for Wrist-PPG Heart-Rate Estimation</h3>
-							<p>Co-authored with Dr. Saurav Aryal at Howard University. The manuscript is in co-author review and targets IEEE TBME, with JBHI as backup.</p>
-							<p>The project asks whether wrist-PPG signal quality should be judged by waveform morphology or by downstream heart-rate utility. Across PPG-DaLiA, WESAD, and SPC 2015, the utility-trained gate outperforms skewness and kurtosis morphology gates across several estimator families.</p>
+							<p>Co-authored with Dr. Saurav Aryal at Howard University. The manuscript is submitted to IEEE TBME.</p>
+							<p>The project asks whether wrist-PPG signal quality should be judged by waveform morphology or by downstream heart-rate utility. The answer overturns a widely cited convention inherited from finger pulse oximetry: skewness-based quality gating, the dominant PPG practice, actively harms heart-rate estimation under motion.</p>
 							<ul class="detail-list">
-								<li>Compared FFT, Reiss-style CNN, TROIKA-style, and JOSS-style sparse reconstruction estimators.</li>
-								<li>Used LOSO and LODO validation, subject bootstrap confidence intervals, Wilcoxon tests, effect sizes, and McNemar gate-disagreement analysis.</li>
-								<li>Showed the FFT-derived utility gate can reduce JOSS-style MAE on held-out datasets without retraining against JOSS labels.</li>
+								<li>The utility-trained gate achieves 3.70 bpm MAE versus roughly 14 bpm under skewness gating on PPG-DaLiA cycling, replicated across 3 datasets and 4 estimator families with 15-fold LOSO and 3-fold LODO validation, p&lt;0.001.</li>
+								<li>Compared FFT, Reiss-style CNN, TROIKA-style, and JOSS-style sparse reconstruction estimators, with subject bootstrap confidence intervals, Wilcoxon tests, effect sizes, and McNemar gate-disagreement analysis.</li>
+								<li>A gate trained only on FFT labels cut JOSS-style sparse-reconstruction MAE by roughly 50 percent on two held-out datasets, demonstrating cross-estimator generalization without retraining.</li>
 							</ul>
 						</section>
 
@@ -129,7 +129,12 @@
 						<section>
 							<span class="time">Aug 2026</span>
 							<h3>Alcon Innovate Boldly R&amp;D Externship</h3>
-							<p>Selected as one of 30 students nationally for Alcon's R&amp;D externship in Fort Worth, Texas. Developed EdgeLens, an embedded YOLOv8n intraocular lens defect-detection concept, and BioSim-IOL, a multimodal concept for patient-specific biological response prediction.</p>
+							<p>Selected as one of 30 students nationally for Alcon's R&amp;D externship in Fort Worth, Texas. Developed EdgeLens, an embedded YOLOv8n intraocular lens defect-detection concept at TRL 3, and BioSim-IOL, a multimodal concept for patient-specific biological response prediction, both presented for R&amp;D leadership review.</p>
+						</section>
+						<section>
+							<span class="time">Jun to Aug 2026</span>
+							<h3>Pfizer AI Document Processing Externship</h3>
+							<p>Built a page-level RAG pipeline for pharmaceutical PDFs. A hybrid header-rule and LLM segmenter raised page-classification accuracy from 3 of 10 to 10 of 10, and diagnosing a 28-point query-routing regression drove a fix that reached 100 percent recall at roughly 2.3 seconds per query across four benchmarked LLMs.</p>
 						</section>
 						<section>
 							<span class="time">2026</span>
@@ -137,9 +142,14 @@
 							<p>Selected for the Quantum Summer Institute on a full NIST scholarship, extending my hardware and information-systems interests into quantum computing fundamentals.</p>
 						</section>
 						<section>
-							<span class="time">2025 to present</span>
+							<span class="time">2026 to present</span>
+							<h3>Campus Leadership</h3>
+							<p>International Student Relations Chair for the Nigerian Student Organization and Hackathon Coordinator on the College of Engineering and Architecture Council.</p>
+						</section>
+						<section>
+							<span class="time">Aug 2025 to May 2026</span>
 							<h3>HU Quant Society, First-Year Liaison</h3>
-							<p>Designed and delivered quantitative finance workshops, grew active first-year membership by 20 percent, and helped build a repeatable onboarding pipeline for new members.</p>
+							<p>Designed and delivered quantitative finance workshops, grew active first-year membership by 20 percent, and built a repeatable onboarding pipeline adopted by chapter leadership.</p>
 						</section>
 						<section>
 							<span class="time">2025 to present</span>
@@ -155,9 +165,10 @@
 							<li>Karsh Affiliate Scholar</li>
 							<li>Onuoha Fellow</li>
 							<li>ColorStack Fellow</li>
+							<li>PMIWDC YSI Scholar</li>
 							<li>2024 Valedictorian, rank 1 of 60</li>
 							<li>Top 40, Nigerian Physics Olympiad 2023</li>
-							<li>MIT Beaver Works certificates</li>
+							<li>MIT certificates: ASICs, Microelectronics, Quantum Software</li>
 							<li>Stanford Introduction to Statistics</li>
 							<li>CITI Certifications</li>
 						</ul>
@@ -188,7 +199,7 @@
 							<img src="images/vitadeck.png" alt="VitaDeck per-deck stats screen with retention numbers and a 90-day review heatmap" />
 							<p class="kicker">C++, vitaSDK, Python</p>
 							<h3>VitaDeck: Anki on the PS Vita</h3>
-							<p>Turned a PlayStation Vita into a dedicated spaced-repetition machine: a desktop exporter freezes Anki decks into a custom package format, a C++ reviewer handles cloze, images, stats, and gamification on the handheld, and an importer replays every grade back through Anki's real scheduler. Fully offline and confirmed working on hardware.</p>
+							<p>Turned a PlayStation Vita into a dedicated spaced-repetition machine that handles 20,000-plus card cloze decks on real hardware. Reverse-engineered Anki's modern zstd-compressed .anki21b format, built the export and grade-replay pipeline into Anki's real scheduler, and debugged hardware-only GPU faults down to GXM texture wrap-mode behavior through coredump analysis.</p>
 							<p><a href="https://github.com/onwusikasomkenechukwu/vitadeck-anki" target="_blank" rel="noopener">View repository</a></p>
 						</section>
 						<section class="project-card">
@@ -202,7 +213,7 @@
 							<img src="images/scheduler.svg" alt="Continuous batching timeline showing requests joining and leaving the batch under a KV cap" />
 							<p class="kicker">Python, Inference Systems</p>
 							<h3>LLM Continuous-Batching Scheduler</h3>
-							<p>An iteration-level scheduler for shared-GPU LLM inference: per-tick batch admission, a strict KV block cap, chunked prefill, and per-user fairness with preemption. In the 100-versus-5 request fairness test, the minority user's median time to first token held at 1.2x its solo baseline against a 2x target.</p>
+							<p>An iteration-level scheduler for shared-GPU LLM inference: per-tick batch admission, a strict KV block cap, chunked prefill, and per-user fairness with preemption. Sustained GPU utilization at or above 0.95 under load while holding a light user's median time to first token at 1.2x its solo baseline against a 20x heavier concurrent user.</p>
 							<p><a href="https://github.com/onwusikasomkenechukwu/llm-continuous-batching-scheduler" target="_blank" rel="noopener">View scheduler</a></p>
 						</section>
 						<section class="project-card">
