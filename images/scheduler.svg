@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="800" height="500" fill="#F9F8F4"/>
+
+  <text x="60" y="70" fill="#2D3A31" font-size="30" font-weight="700">Continuous Batching</text>
+  <text x="60" y="96" fill="#8C9A84" font-size="15" letter-spacing="2">ITERATION-LEVEL LLM SCHEDULING</text>
+
+  <!-- tick axis -->
+  <g stroke="#E6E2DA" stroke-width="1">
+    <line x1="150" y1="130" x2="150" y2="380"/>
+    <line x1="270" y1="130" x2="270" y2="380"/>
+    <line x1="390" y1="130" x2="390" y2="380"/>
+    <line x1="510" y1="130" x2="510" y2="380"/>
+    <line x1="630" y1="130" x2="630" y2="380"/>
+    <line x1="740" y1="130" x2="740" y2="380"/>
+  </g>
+  <g fill="#8C9A84" font-size="12" text-anchor="middle" letter-spacing="1">
+    <text x="150" y="122">t0</text>
+    <text x="270" y="122">t1</text>
+    <text x="390" y="122">t2</text>
+    <text x="510" y="122">t3</text>
+    <text x="630" y="122">t4</text>
+  </g>
+
+  <!-- request lanes: bars join and leave the batch at tick boundaries -->
+  <g font-size="13" fill="#2D3A31">
+    <text x="60" y="164">user A</text>
+    <rect x="150" y="146" width="360" height="28" rx="14" fill="#8C9A84"/>
+    <text x="60" y="214">user A</text>
+    <rect x="150" y="196" width="150" height="28" rx="14" fill="#8C9A84" opacity="0.75"/>
+    <text x="60" y="264">user B</text>
+    <rect x="210" y="246" width="420" height="28" rx="14" fill="#C27B66"/>
+    <text x="60" y="314">user A</text>
+    <rect x="330" y="296" width="410" height="28" rx="14" fill="#8C9A84" opacity="0.55"/>
+    <text x="60" y="364">user B</text>
+    <rect x="450" y="346" width="180" height="28" rx="14" fill="#C27B66" opacity="0.7"/>
+  </g>
+  <g fill="#F9F8F4" font-size="11" font-weight="600">
+    <text x="166" y="165">prefill</text>
+    <text x="290" y="165">decode</text>
+    <text x="226" y="265">chunked prefill</text>
+    <text x="346" y="315">decode</text>
+  </g>
+
+  <!-- KV meter -->
+  <text x="60" y="428" fill="#2D3A31" font-size="13" font-weight="600">KV blocks</text>
+  <rect x="150" y="412" width="590" height="20" rx="10" fill="#F2F0EB" stroke="#E6E2DA"/>
+  <rect x="150" y="412" width="430" height="20" rx="10" fill="#DCCFC2"/>
+  <line x1="740" y1="404" x2="740" y2="440" stroke="#2D3A31" stroke-width="2"/>
+  <text x="740" y="456" fill="#2D3A31" font-size="11" text-anchor="end" letter-spacing="1">CAP 256</text>
+  <text x="580" y="456" fill="#8C9A84" font-size="11" letter-spacing="1">FAIR SHARE + PREEMPTION</text>
+</svg>

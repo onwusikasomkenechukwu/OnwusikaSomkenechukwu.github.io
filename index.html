@@ -26,6 +26,7 @@
 								<li>Embedded ML</li>
 								<li>Biomedical Signals</li>
 								<li>Cyber-Physical Systems</li>
+								<li>LLM &amp; Agent Systems</li>
 								<li>Hardware-Aware Evaluation</li>
 							</ul>
 						</div>
@@ -60,8 +61,8 @@
 							<span>GPA, BS Electrical Engineering, expected May 2029</span>
 						</section>
 						<section>
-							<strong>4</strong>
-							<span>primary areas: embedded ML, biomedical signals, robust sensing, evaluation</span>
+							<strong>5</strong>
+							<span>primary areas: embedded ML, biomedical signals, robust sensing, LLM systems, evaluation</span>
 						</section>
 						<section>
 							<strong>30</strong>
@@ -184,6 +185,27 @@
 							<p><a href="https://github.com/onwusikasomkenechukwu/rv64-single_cycle_processor" target="_blank" rel="noopener">View datapath</a></p>
 						</section>
 						<section class="project-card">
+							<img src="images/vitadeck.png" alt="VitaDeck per-deck stats screen with retention numbers and a 90-day review heatmap" />
+							<p class="kicker">C++, vitaSDK, Python</p>
+							<h3>VitaDeck: Anki on the PS Vita</h3>
+							<p>Turned a PlayStation Vita into a dedicated spaced-repetition machine: a desktop exporter freezes Anki decks into a custom package format, a C++ reviewer handles cloze, images, stats, and gamification on the handheld, and an importer replays every grade back through Anki's real scheduler. Fully offline and confirmed working on hardware.</p>
+							<p><a href="https://github.com/onwusikasomkenechukwu/vitadeck-anki" target="_blank" rel="noopener">View repository</a></p>
+						</section>
+						<section class="project-card">
+							<img src="images/jarvis.svg" alt="JARVIS architecture diagram separating an untrusted read zone from privileged actions" />
+							<p class="kicker">Python, Playwright, OAuth</p>
+							<h3>JARVIS Personal Executive System</h3>
+							<p>A security-first personal AI agent built on one question: if an attacker controls the text the agent reads, what is the worst they can make it do? Untrusted content is structurally separated from privileged actions. Shipped so far: a 100/100 browser reliability gate, at-most-once Gmail send behind out-of-band confirmation, and send verification decorrelated across two OAuth tokens, backed by 59 passing tests.</p>
+							<p><a href="https://github.com/onwusikasomkenechukwu/JARVIS-Personal-Artificial-Executive-System" target="_blank" rel="noopener">View architecture</a></p>
+						</section>
+						<section class="project-card">
+							<img src="images/scheduler.svg" alt="Continuous batching timeline showing requests joining and leaving the batch under a KV cap" />
+							<p class="kicker">Python, Inference Systems</p>
+							<h3>LLM Continuous-Batching Scheduler</h3>
+							<p>An iteration-level scheduler for shared-GPU LLM inference: per-tick batch admission, a strict KV block cap, chunked prefill, and per-user fairness with preemption. In the 100-versus-5 request fairness test, the minority user's median time to first token held at 1.2x its solo baseline against a 2x target.</p>
+							<p><a href="https://github.com/onwusikasomkenechukwu/llm-continuous-batching-scheduler" target="_blank" rel="noopener">View scheduler</a></p>
+						</section>
+						<section class="project-card">
 							<img src="images/pic28.png" alt="MedLens mobile interface screenshot" />
 							<p class="kicker">React, FastAPI, MongoDB</p>
 							<h3>MedLens</h3>
@@ -208,6 +230,13 @@
 							<h3>Morehouse SBX Analysis</h3>
 							<p>Analyzed links among student performance, soft skills, and placement outcomes, then presented the work at the 2025 BICE Symposium.</p>
 							<p><a href="https://colab.research.google.com/drive/1GNFqZrwDBXewtRxTZKWPhaYSoWOrrjid?usp=sharing" target="_blank" rel="noopener">View notebook</a></p>
+						</section>
+						<section class="project-card">
+							<img src="images/research-directory.png" alt="Howard Undergraduate Research Directory web app with institution tabs, search, and filters" />
+							<p class="kicker">React, Vite, Tailwind</p>
+							<h3>Undergraduate Research Directory</h3>
+							<p>A multi-institution directory for finding labs that accept undergraduate researchers, currently covering Howard and Stanford. Each institution keeps its own search state, filters, and theming, with hidden-pipeline callouts and a class-year filter validated through discovery interviews at both schools.</p>
+							<p><a href="https://github.com/onwusikasomkenechukwu/howard-research-directory" target="_blank" rel="noopener">View repository</a></p>
 						</section>
 					</div>
 				</article>

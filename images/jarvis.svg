@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="800" height="500" fill="#F9F8F4"/>
+  <g fill="none" stroke="#E6E2DA" stroke-width="1">
+    <path d="M0 100 H800 M0 200 H800 M0 300 H800 M0 400 H800"/>
+    <path d="M100 0 V500 M200 0 V500 M300 0 V500 M400 0 V500 M500 0 V500 M600 0 V500 M700 0 V500"/>
+  </g>
+
+  <text x="60" y="78" fill="#2D3A31" font-size="30" font-weight="700" letter-spacing="1">JARVIS</text>
+  <text x="60" y="104" fill="#8C9A84" font-size="15" letter-spacing="2">PERSONAL ARTIFICIAL EXECUTIVE SYSTEM</text>
+
+  <!-- untrusted zone -->
+  <rect x="58" y="150" width="290" height="200" rx="18" fill="#F2F0EB" stroke="#C27B66" stroke-width="2" stroke-dasharray="7 6"/>
+  <text x="80" y="184" fill="#C27B66" font-size="13" font-weight="700" letter-spacing="2">UNTRUSTED READ ZONE</text>
+  <g fill="#FFFFFF" stroke="#E6E2DA">
+    <rect x="80" y="202" width="246" height="36" rx="10"/>
+    <rect x="80" y="248" width="246" height="36" rx="10"/>
+    <rect x="80" y="294" width="246" height="36" rx="10"/>
+  </g>
+  <g fill="#2D3A31" font-size="14">
+    <text x="98" y="225">Web pages, email, documents</text>
+    <text x="98" y="271">Provenance tagging</text>
+    <text x="98" y="317">Data, never instruction</text>
+  </g>
+
+  <!-- gate arrow -->
+  <line x1="348" y1="250" x2="446" y2="250" stroke="#8C9A84" stroke-width="3"/>
+  <polygon points="446,243 460,250 446,257" fill="#8C9A84"/>
+  <rect x="368" y="218" width="64" height="22" rx="11" fill="#2D3A31"/>
+  <text x="400" y="233" fill="#F9F8F4" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">GATE</text>
+
+  <!-- privileged zone -->
+  <rect x="462" y="150" width="280" height="200" rx="18" fill="#FFFFFF" stroke="#2D3A31" stroke-width="2"/>
+  <text x="484" y="184" fill="#2D3A31" font-size="13" font-weight="700" letter-spacing="2">PRIVILEGED ACTIONS</text>
+  <g fill="#F2F0EB" stroke="#E6E2DA">
+    <rect x="484" y="202" width="236" height="36" rx="10"/>
+    <rect x="484" y="248" width="236" height="36" rx="10"/>
+    <rect x="484" y="294" width="236" height="36" rx="10"/>
+  </g>
+  <g fill="#2D3A31" font-size="14">
+    <text x="502" y="225">Out-of-band confirmation</text>
+    <text x="502" y="271">At-most-once send</text>
+    <text x="502" y="317">Decorrelated verification</text>
+  </g>
+
+  <!-- pipeline -->
+  <g font-size="13" font-weight="600" text-anchor="middle">
+    <rect x="70" y="398" width="110" height="40" rx="20" fill="#8C9A84"/>
+    <text x="125" y="423" fill="#F9F8F4">Plan</text>
+    <rect x="210" y="398" width="110" height="40" rx="20" fill="#DCCFC2"/>
+    <text x="265" y="423" fill="#2D3A31">Guard</text>
+    <rect x="350" y="398" width="110" height="40" rx="20" fill="#DCCFC2"/>
+    <text x="405" y="423" fill="#2D3A31">Confirm</text>
+    <rect x="490" y="398" width="110" height="40" rx="20" fill="#DCCFC2"/>
+    <text x="545" y="423" fill="#2D3A31">Act</text>
+    <rect x="630" y="398" width="110" height="40" rx="20" fill="#2D3A31"/>
+    <text x="685" y="423" fill="#F9F8F4">Verify</text>
+  </g>
+  <g stroke="#8C9A84" stroke-width="2">
+    <line x1="180" y1="418" x2="210" y2="418"/>
+    <line x1="320" y1="418" x2="350" y2="418"/>
+    <line x1="460" y1="418" x2="490" y2="418"/>
+    <line x1="600" y1="418" x2="630" y2="418"/>
+  </g>
+</svg>
