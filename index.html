@@ -52,8 +52,8 @@
 					<p class="eyebrow">Research Identity</p>
 					<h2 class="major">What I am building toward</h2>
 					<span class="image main arch-image"><img src="images/ppg.png" alt="PPG signal quality classifier interface" /></span>
-					<p>I am an electrical engineering student at Howard University, with minors in computer science and biology. My work sits where models stop being clean abstractions and start meeting motion, skin, heat, memory limits, and clinical consequences.</p>
-					<p>The through-line is simple: if a system is meant to work outside a notebook, its evaluation has to look like the world it will enter. That is why my strongest current work is on utility-aligned quality gating for wrist photoplethysmography, with validation across datasets, estimator families, and deployment-style failure modes.</p>
+					<p>I am an electrical engineering student at Howard University, with minors in computer science and biology. My work sits where models meet motion, heat, memory limits, and clinical consequences.</p>
+					<p>The through-line: if a system is meant to work outside a notebook, its evaluation has to look like the world it will enter. My strongest current work is utility-aligned quality gating for wrist photoplethysmography.</p>
 
 					<div class="stat-grid" aria-label="Academic and technical snapshot">
 						<section>
@@ -62,7 +62,7 @@
 						</section>
 						<section>
 							<strong>5</strong>
-							<span>primary areas: embedded ML, biomedical signals, robust sensing, LLM systems, evaluation</span>
+							<span>focus areas: embedded ML, biomedical signals, robust sensing, LLM systems, evaluation</span>
 						</section>
 						<section>
 							<strong>30</strong>
@@ -70,13 +70,13 @@
 						</section>
 						<section>
 							<strong>3.70</strong>
-							<span>bpm MAE from the utility gate versus roughly 14 bpm under skewness gating</span>
+							<span>bpm heart-rate error with the utility gate, versus about 14 without</span>
 						</section>
 					</div>
 
 					<div class="soft-panel">
 						<h3>Current stance</h3>
-						<p>I am most interested in intelligent systems that can be defended after the demo is over: resource-limited inference, biomedical sensing, signal quality, and the statistics needed to know whether a model actually helped.</p>
+						<p>I care most about systems that can be defended after the demo: resource-limited inference, biomedical sensing, and the statistics to know whether a model actually helped.</p>
 					</div>
 				</article>
 
@@ -90,31 +90,31 @@
 							<p class="kicker">Primary Research</p>
 							<h3>ppg-pipeline: Utility-Aligned Quality Gating for Wrist-PPG Heart-Rate Estimation</h3>
 							<p>Co-authored with Dr. Saurav Aryal at Howard University. The manuscript is submitted to IEEE TBME.</p>
-							<p>The project asks whether wrist-PPG signal quality should be judged by waveform morphology or by downstream heart-rate utility. The answer overturns a widely cited convention inherited from finger pulse oximetry: skewness-based quality gating, the dominant PPG practice, actively harms heart-rate estimation under motion.</p>
+							<p>Should wrist-PPG quality be judged by waveform shape or by downstream heart-rate utility? The answer overturns a convention inherited from finger pulse oximetry: skewness-based gating, the dominant practice, actively harms heart-rate estimation under motion.</p>
 							<ul class="detail-list">
-								<li>The utility-trained gate achieves 3.70 bpm MAE versus roughly 14 bpm under skewness gating on PPG-DaLiA cycling, replicated across 3 datasets and 4 estimator families with 15-fold LOSO and 3-fold LODO validation, p&lt;0.001.</li>
-								<li>Compared FFT, Reiss-style CNN, TROIKA-style, and JOSS-style sparse reconstruction estimators, with subject bootstrap confidence intervals, Wilcoxon tests, effect sizes, and McNemar gate-disagreement analysis.</li>
-								<li>A gate trained only on FFT labels cut JOSS-style sparse-reconstruction MAE by roughly 50 percent on two held-out datasets, demonstrating cross-estimator generalization without retraining.</li>
+								<li>3.70 bpm error from the utility gate versus roughly 14 bpm under skewness gating, replicated across 3 datasets and 4 estimator families, p&lt;0.001.</li>
+								<li>Validated with subject-wise LOSO and LODO splits, bootstrap confidence intervals, and McNemar gate-disagreement analysis.</li>
+								<li>A gate trained only on FFT labels cut a sparse-reconstruction estimator's error in half on held-out datasets, with no retraining.</li>
 							</ul>
 						</section>
 
 						<section class="project-card">
 							<p class="kicker">NASA Blue Skies</p>
 							<h3>A.N.T.S. Autonomous Aircraft Inspection</h3>
-							<p>Engineered the perception and inference pipeline for onboard YOLOv8n defect detection on Raspberry Pi hardware under power, thermal, and flight-safety constraints.</p>
-							<p>The project reached TRL 4 to 5 and was presented through ADMI 2026 and the CRA UR2PhD Research Showcase in New Orleans.</p>
+							<p>Engineered the perception pipeline for onboard YOLOv8n defect detection on Raspberry Pi under power, thermal, and flight-safety constraints.</p>
+							<p>Reached TRL 4 to 5; presented at ADMI 2026 and the CRA UR2PhD Research Showcase in New Orleans.</p>
 						</section>
 
 						<section class="project-card">
 							<p class="kicker">Biomedical AI</p>
 							<h3>FUSION Experience, University of Florida</h3>
-							<p>Processed spatial-omics data in the HuBMAP ecosystem under Dr. Yulia Levites Strekalova, using UMAP and violin plots to study diabetic kidney disease tissue regions and podocyte depletion patterns.</p>
+							<p>Processed spatial-omics data in the HuBMAP ecosystem under Dr. Yulia Levites Strekalova, studying diabetic kidney disease and podocyte depletion.</p>
 						</section>
 
 						<section class="project-card">
 							<p class="kicker">Clinical ML</p>
 							<h3>Atrial Fibrillation Detection from ECG</h3>
-							<p>Built a machine learning pipeline for ECG-based atrial fibrillation detection. The evaluation emphasized minority-class recall and F1 because headline accuracy is weak evidence on imbalanced clinical data.</p>
+							<p>An ECG pipeline for atrial fibrillation detection, evaluated on minority-class recall because accuracy is weak evidence on imbalanced clinical data.</p>
 							<p><a href="https://github.com/onwusikasomkenechukwu/Arrhythmia-Detection-ML-Project" target="_blank" rel="noopener">View source code</a></p>
 						</section>
 					</div>
@@ -129,17 +129,17 @@
 						<section>
 							<span class="time">Aug 2026</span>
 							<h3>Alcon Innovate Boldly R&amp;D Externship</h3>
-							<p>Selected as one of 30 students nationally for Alcon's R&amp;D externship in Fort Worth, Texas. Developed EdgeLens, an embedded YOLOv8n intraocular lens defect-detection concept at TRL 3, and BioSim-IOL, a multimodal concept for patient-specific biological response prediction, both presented for R&amp;D leadership review.</p>
+							<p>One of 30 students selected nationally. Developed EdgeLens, an embedded intraocular-lens defect-detection concept, and BioSim-IOL, a patient-specific response-prediction concept, both presented to R&amp;D leadership.</p>
 						</section>
 						<section>
 							<span class="time">Jun to Aug 2026</span>
 							<h3>Pfizer AI Document Processing Externship</h3>
-							<p>Built a page-level RAG pipeline for pharmaceutical PDFs. A hybrid header-rule and LLM segmenter raised page-classification accuracy from 3 of 10 to 10 of 10, and diagnosing a 28-point query-routing regression drove a fix that reached 100 percent recall at roughly 2.3 seconds per query across four benchmarked LLMs.</p>
+							<p>Built a page-level RAG pipeline for pharmaceutical PDFs: a hybrid segmenter took page classification from 3/10 to 10/10, and a query-routing fix reached 100 percent recall at about 2.3 seconds per query.</p>
 						</section>
 						<section>
 							<span class="time">2026</span>
 							<h3>Qubit by Qubit Quantum Summer Institute</h3>
-							<p>Selected for the Quantum Summer Institute on a full NIST scholarship, extending my hardware and information-systems interests into quantum computing fundamentals.</p>
+							<p>Selected on a full NIST scholarship, extending my hardware interests into quantum computing fundamentals.</p>
 						</section>
 						<section>
 							<span class="time">2026 to present</span>
@@ -149,12 +149,12 @@
 						<section>
 							<span class="time">Aug 2025 to May 2026</span>
 							<h3>HU Quant Society, First-Year Liaison</h3>
-							<p>Designed and delivered quantitative finance workshops, grew active first-year membership by 20 percent, and built a repeatable onboarding pipeline adopted by chapter leadership.</p>
+							<p>Delivered quantitative finance workshops, grew first-year membership 20 percent, and built an onboarding pipeline the chapter still uses.</p>
 						</section>
 						<section>
 							<span class="time">2025 to present</span>
 							<h3>Technical Communities</h3>
-							<p>Member of NSBE, IEEE, ColorStack, and HU Robotics. Current technical orbit includes VLSI, RISC-V, Verilog, autonomous systems, and hardware-software integration.</p>
+							<p>Member of NSBE, IEEE, ColorStack, and HU Robotics, working across VLSI, RISC-V, autonomous systems, and hardware-software integration.</p>
 						</section>
 					</div>
 
@@ -185,7 +185,7 @@
 							<img src="images/ppg.png" alt="PPG classifier project interface" />
 							<p class="kicker">PyTorch, SciPy, Gradio</p>
 							<h3>PPG Signal Quality Classifier</h3>
-							<p>A 1D CNN predecessor to ppg-pipeline, trained on PPG-DaLiA wrist BVP with subject-wise splits. It reached 0.96 macro F1 and was designed as a quality gate before downstream heart-rate or arrhythmia estimation.</p>
+							<p>A 1D CNN quality gate for wrist PPG, trained with subject-wise splits to 0.96 macro F1. The predecessor to ppg-pipeline.</p>
 							<p><a href="https://github.com/onwusikasomkenechukwu/ppg-sqi-cnn" target="_blank" rel="noopener">View repository</a></p>
 						</section>
 						<section class="project-card">
@@ -199,28 +199,28 @@
 							<img src="images/vitadeck.png" alt="VitaDeck per-deck stats screen with retention numbers and a 90-day review heatmap" />
 							<p class="kicker">C++, vitaSDK, Python</p>
 							<h3>VitaDeck: Anki on the PS Vita</h3>
-							<p>Turned a PlayStation Vita into a dedicated spaced-repetition machine that handles 20,000-plus card cloze decks on real hardware. Reverse-engineered Anki's modern zstd-compressed .anki21b format, built the export and grade-replay pipeline into Anki's real scheduler, and debugged hardware-only GPU faults down to GXM texture wrap-mode behavior through coredump analysis.</p>
+							<p>A spaced-repetition client that runs 20,000-card Anki decks on real PS Vita hardware. Reverse-engineered Anki's modern deck format, synced on-device reviews back into Anki's scheduler, and debugged GPU faults straight from coredumps.</p>
 							<p><a href="https://github.com/onwusikasomkenechukwu/vitadeck-anki" target="_blank" rel="noopener">View repository</a></p>
 						</section>
 						<section class="project-card">
 							<img src="images/jarvis.svg" alt="JARVIS architecture diagram separating an untrusted read zone from privileged actions" />
 							<p class="kicker">Python, Playwright, OAuth</p>
 							<h3>JARVIS Personal Executive System</h3>
-							<p>A security-first personal AI agent built on one question: if an attacker controls the text the agent reads, what is the worst they can make it do? Untrusted content is structurally separated from privileged actions. Shipped so far: a 100/100 browser reliability gate, at-most-once Gmail send behind out-of-band confirmation, and send verification decorrelated across two OAuth tokens, backed by 59 passing tests.</p>
+							<p>A security-first personal AI agent built on one question: if an attacker controls the text the agent reads, what is the worst they can make it do? Untrusted content is structurally separated from privileged actions — proven so far by a 100/100 browser reliability gate, at-most-once email send behind out-of-band confirmation, and 59 passing tests.</p>
 							<p><a href="https://github.com/onwusikasomkenechukwu/JARVIS-Personal-Artificial-Executive-System" target="_blank" rel="noopener">View architecture</a></p>
 						</section>
 						<section class="project-card">
 							<img src="images/scheduler.svg" alt="Continuous batching timeline showing requests joining and leaving the batch under a KV cap" />
 							<p class="kicker">Python, Inference Systems</p>
 							<h3>LLM Continuous-Batching Scheduler</h3>
-							<p>An iteration-level scheduler for shared-GPU LLM inference: per-tick batch admission, a strict KV block cap, chunked prefill, and per-user fairness with preemption. Sustained GPU utilization at or above 0.95 under load while holding a light user's median time to first token at 1.2x its solo baseline against a 20x heavier concurrent user.</p>
+							<p>An iteration-level scheduler for shared-GPU LLM inference with a strict KV cap, chunked prefill, and per-user fairness. Held GPU utilization above 0.95 while keeping a light user's latency at 1.2x solo baseline against a 20x heavier user.</p>
 							<p><a href="https://github.com/onwusikasomkenechukwu/llm-continuous-batching-scheduler" target="_blank" rel="noopener">View scheduler</a></p>
 						</section>
 						<section class="project-card">
 							<img src="images/pic28.png" alt="MedLens mobile interface screenshot" />
 							<p class="kicker">React, FastAPI, MongoDB</p>
 							<h3>MedLens</h3>
-							<p>Led AI and integration work for a BisonHacks 2026 prototype that turns medical documents into plainer language through an OCR to GPT-4o-mini to OpenFDA pipeline.</p>
+							<p>Led AI integration for a BisonHacks 2026 prototype that turns medical documents into plain language via OCR, GPT-4o-mini, and OpenFDA.</p>
 						</section>
 						<section class="project-card">
 							<img src="images/pic09.jpg" alt="ECG arrhythmia analysis visual" />
@@ -246,7 +246,7 @@
 							<img src="images/research-directory.png" alt="Howard Undergraduate Research Directory web app with institution tabs, search, and filters" />
 							<p class="kicker">React, Vite, Tailwind</p>
 							<h3>Undergraduate Research Directory</h3>
-							<p>A multi-institution directory for finding labs that accept undergraduate researchers, currently covering Howard and Stanford. Each institution keeps its own search state, filters, and theming, with hidden-pipeline callouts and a class-year filter validated through discovery interviews at both schools.</p>
+							<p>A directory for finding labs that accept undergraduate researchers, covering Howard and Stanford with per-school search, filters, and theming — shaped by discovery interviews at both schools.</p>
 							<p><a href="https://github.com/onwusikasomkenechukwu/howard-research-directory" target="_blank" rel="noopener">View repository</a></p>
 						</section>
 					</div>
@@ -256,7 +256,7 @@
 					<p class="eyebrow">Contact</p>
 					<h2 class="major">Send the hard problem</h2>
 					<span class="image main arch-image"><img src="images/honors.jpg" alt="Academic honors and portfolio materials" /></span>
-					<p>I am open to research collaborations, embedded ML projects, biomedical sensing work, and conversations with labs building systems that have to survive real constraints.</p>
+					<p>Open to research collaborations, embedded ML and biomedical sensing work, and labs building systems that have to survive real constraints.</p>
 					<div class="contact-panel">
 						<a class="button primary" href="mailto:somkenechukwu.onwus@bison.howard.edu">Email me</a>
 						<a class="button" href="https://drive.google.com/file/d/1xSH7FMvm9I1xZIiUUz-1iHj80WKdueXo/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
